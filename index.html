@@ -4,81 +4,113 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Budget Tracker</title>
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-
 
 <body>
 
+    <img src="budget.jpg" alt="Budget image" width="100">
 
-<img src="budget.jpg" alt="budget image">
+    <h1>My Budget Tracker</h1>
 
-<h1>My Budget Tracker</h1>
+    <p>Track your income and expenses in one place.</p>
 
-<p>Track your income and expenses in one place.</p>
+    <section class="video-section">
+        <h2>Budgeting Tips</h2>
 
-<section class="video-section">
-    <h2>Budgeting Tips</h2>
+        <iframe
+            width="560"
+            height="315"
+            src="https://www.youtube.com/embed/vJabNEwZIuc?start=16"
+            title="Budgeting Tips Video"
+            frameborder="0"
+            allowfullscreen>
+        </iframe>
+    </section>
 
-    <iframe
-        width="560"
-        height="315"
-        src="https://www.youtube.com/embed/vJabNEwZIuc?start=16"
-        title="Budgeting Tips Video"
-        frameborder="0"
-        allowfullscreen>
-    </iframe>
-    <br>
-    <br>
-</section>
-<details>
-    <summary>How to use this tracker</summary>
-    <p>
-        Enter your income and expenses using the form below.
-        The expense table helps you keep track of what you spend
-        and manage your budget more easily.
-    </p>
-</details>
+    <details>
+        <summary>How to use this tracker</summary>
+        <p>
+            Enter your income and expenses using the form below.
+            The expense table helps you keep track of what you spend
+            and manage your budget more easily.
+        </p>
+    </details>
 
+    <section class="add-expense">
+        <h2>Add Expense</h2>
 
-<section class="add-expense">
-    <h2>Add Expense</h2>
+        <form>
+            <label for="expense-name">Expense Name:</label>
+            <input type="text" id="expense-name" name="expense-name">
 
-    <form>
-        <label for="expense-name">Expense Name:</label>
-        <input type="text" id="expense-name" name="expense-name">
+            <label for="expense-amount">Amount:</label>
+            <input type="number" id="expense-amount" name="expense-amount">
 
-        <label for="expense-amount">Amount:</label>
-        <input type="number" id="expense-amount" name="expense-amount">
+            <label for="expense-category">Category:</label>
+            <select id="expense-category" name="expense-category">
+                <option value="food">Food</option>
+                <option value="transport">Transport</option>
+                <option value="rent">Rent</option>
+                <option value="entertainment">Entertainment</option>
+                <option value="other">Other</option>
+            </select>
 
-        <label for="expense-category">Category:</label>
-        <select id="expense-category" name="expense-category">
-            <option value="food">Food</option>
-            <option value="transport">Transport</option>
-            <option value="rent">Rent</option>
-            <option value="entertainment">Entertainment</option>
-            <option value="other">Other</option>
-        </select>
+            <button type="button">Add Expense</button>
+        </form>
+    </section>
 
-        <button type="button">Add Expense</button>
-    </form>
-</section>
-    
+    <section class="expenses-section">
+        <h2>Expenses</h2>
 
-    <br><br>
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Description</th>
+                    <th>Category</th>
+                    <th>Amount</th>
+                </tr>
+            </thead>
 
-    <label for="amount">Amount:</label>
-    <input type="number" id="amount" placeholder="Enter amount">
+            <tbody>
+                <tr>
+                    <td>2026-08-20</td>
+                    <td>Groceries</td>
+                    <td>Food</td>
+                    <td>$45</td>
+                </tr>
 
-    <br><br>
+                <tr>
+                    <td>2026-08-21</td>
+                    <td>Bus Fare</td>
+                    <td>Transport</td>
+                    <td>$10</td>
+                </tr>
 
-    <label for="category">Category:</label>
-    <input type="text" id="category" placeholder="Enter category">
-</section>
-<section id="your_expenses">
-    <h2>Your Expenses</h2>
-    <p>No expenses yet.</p>
-</section>
+                <tr>
+                    <td>2026-08-22</td>
+                    <td>Electricity Bill</td>
+                    <td>Bills</td>
+                    <td>$30</td>
+                </tr>
+
+                <tr>
+                    <td>2026-08-23</td>
+                    <td>Lunch</td>
+                    <td>Food</td>
+                    <td>$15</td>
+                </tr>
+
+                <tr>
+                    <td>2026-08-24</td>
+                    <td>Internet</td>
+                    <td>Bills</td>
+                    <td>$25</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-body{
+body {
     font-family: Arial, sans-serif;
     margin: 40px;
     background-color: #fff;
@@ -10,16 +10,15 @@ h1 {
     text-align: center;
 }
 
-
-    /* class selector */
-.expense_section {
+/* Expenses section */
+.expenses-section {
     background-color: #eaebeb;
     padding: 20px;
     margin-top: 30px;
     border-radius: 8px;
-    
 }
 
+/* Add expense section */
 .add-expense {
     margin-top: 30px;
     padding: 20px;
@@ -49,6 +48,7 @@ h1 {
     font-size: 16px;
 }
 
+/* Button */
 .add-expense button {
     padding: 10px;
     margin-top: 10px;
@@ -64,9 +64,8 @@ h1 {
 }
 
 /* Direct child selector */
-.add-expense-section > input {
-    padding: 8px;
-    margin: 5px;
+.add-expense > form {
+    padding: 5px;
 }
 
 /* Position pseudo-class */
@@ -78,7 +77,6 @@ h1 {
 input:not([type="submit"]) {
     border: 1px solid #ccc;
     border-radius: 5px;
-    color: #1fd125;
 }
 
 /* Focus state */
@@ -92,22 +90,13 @@ input:focus {
     background-color: #e8f5e9;
 }
 
-/* Hand cursor on buttons */
-button {
-    cursor: pointer;
-}
-
-    /*style the input fields*/
-
-input {  
+/* General input fields */
+input {
     padding: 8px;
     margin-top: 5px;
-    color: #6a946b;
 }
 
-
-    /*ID selector*/
-
+/* ID selector */
 #your_expenses {
     background-color: #ecf0ee;
     padding: 20px;
@@ -115,23 +104,17 @@ input {
     border-radius: 8px;
 }
 
-
-
-
-
+/* Section spacing */
 section {
     margin-top: 30px;
 }
 
-/*hand cursor on button*/
-
-
-button{
-
-cursor: pointer;
+/* Button hand cursor */
+button {
+    cursor: pointer;
 }
 
+/* Budget image */
 img {
     width: 50px;
 }
-
