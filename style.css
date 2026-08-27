@@ -19,6 +19,35 @@ h1 {
     
 }
 
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.expense-table th,
+.expense-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.expense-table th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.expense-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+
+
+
+
+
+
     /*style the input fields*/
 
 input {  
